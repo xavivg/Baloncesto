@@ -14,22 +14,21 @@ public class Jugador {
     private String nombre;
     private LocalDate fechaNacimiento;
     private int canastas;
-    private int numAsistencias;
+    private int numeroAsistencias;
     private int rebotes;
     private String posicion;
 
-    public Jugador(){
-
-    }
-
-    public Jugador(String nombre, LocalDate fechaNacimiento, int canastas, int numAsistencias, int rebotes, String posicion) {
+    public Jugador(String nombre, LocalDate fechaNacimiento, int canastas, int numeroAsistencias, int rebotes, String posicion) {
 
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.canastas = canastas;
-        this.numAsistencias = numAsistencias;
+        this.numeroAsistencias = numeroAsistencias;
         this.rebotes = rebotes;
         this.posicion = posicion;
+    }
+    public Jugador(){
+
     }
 
     public Long getId() {
@@ -64,12 +63,12 @@ public class Jugador {
         this.canastas = canastas;
     }
 
-    public int getNumAsistencias() {
-        return numAsistencias;
+    public int getNumeroAsistencias() {
+        return numeroAsistencias;
     }
 
-    public void setNumAsistencias(int numAsistencias) {
-        this.numAsistencias = numAsistencias;
+    public void setNumeroAsistencias(int numeroAsistencias) {
+        this.numeroAsistencias = numeroAsistencias;
     }
 
     public int getRebotes() {
@@ -95,7 +94,7 @@ public class Jugador {
                 ", nombre='" + nombre + '\'' +
                 ", fechaNacimiento=" + fechaNacimiento +
                 ", canastas=" + canastas +
-                ", numAsistencias=" + numAsistencias +
+                ", numeroAsistencias=" + numeroAsistencias +
                 ", rebotes=" + rebotes +
                 ", posicion='" + posicion + '\'' +
                 '}';
