@@ -10,7 +10,8 @@ import java.util.List;
  */
 
 public interface EquipoRepository extends JpaRepository<Equipo,Long> {
-    Equipo findByNombre(String nom);
+    Equipo findByNombre(String nombre);
+    Equipo findByNombreLike(String nombre);
     List<Equipo> findByLocalidad(String loc);
 
 }
